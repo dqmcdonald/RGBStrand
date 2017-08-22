@@ -46,6 +46,16 @@ class CylonMode : public StrandMode {
     int d_direction = 1;
 };
 
+/* Fire Mode - Appears to flicker like a fire
+ *  Red pot - speed of flicker
+
+ */
+class FireMode : public StrandMode {
+  public:
+    FireMode();
+    void setup( Adafruit_NeoPixel& Strand) override;
+    void update( Adafruit_NeoPixel& Strand) override; 
+};
 
 
 

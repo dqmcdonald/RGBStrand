@@ -37,14 +37,16 @@ Adafruit_NeoPixel strand = Adafruit_NeoPixel(60, STRAND_PIN, NEO_GRB + NEO_KHZ80
 
 // Set up the possible strand modes:
 
-const int NUM_MODES = 2;
+const int NUM_MODES = 3;
 int current_mode = 0;
 
 RGBMode rgb_mode = RGBMode();
 CylonMode cylon_mode = CylonMode();
+FireMode fire_mode = FireMode();
 StrandMode* all_modes[NUM_MODES] = {
   &rgb_mode,
-  &cylon_mode
+  &cylon_mode,
+  &fire_mode
 };
 
 
